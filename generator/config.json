@@ -1,0 +1,43 @@
+{
+  "layers": [
+    {
+      "name": "Background",
+      "values": ["Blue", "Orange", "Purple", "Red", "Yellow"],
+      "trait_path": "./trait-layers/backgrounds",
+      "filename": ["blue", "orange", "purple", "red", "yellow"],
+      "weights": [20,20,20,20,20]
+    },
+    {
+      "name": "Back Design",
+      "values": ["alert", "crown", "idea", "rainbow", "vibing"],
+      "trait_path": "./trait-layers/back-designs",
+      "filename": ["alert", "crown", "idea", "rainbow", "vibing"],
+      "weights": [5,30,10,5,50]
+    },
+    {
+      "name": "Foreground",
+      "values": ["body"],
+      "trait_path": "./trait-layers/foreground",
+      "filename": ["body"],
+      "weights": [100]
+    },
+    {
+      "name": "Eyes",
+      "values": ["angry", "closed", "confused", "dead", "happy","neutral"],
+      "trait_path": "./trait-layers/eyes",
+      "filename": ["angry", "closed", "confused", "dead", "happy","neutral"],
+      "weights": [20,20,5,5,30,20]
+    }
+    
+  ],
+  "incompatibilities": [
+    {
+      "layer": "Back Design",
+      "value": "rainbow",
+      "incompatible_with": ["angry", "closed", "confused", "dead"]
+    }
+  ],
+  "baseURI": ".",
+  "name": "RedHeadphone #",
+  "description": "A collectibles project featuring art by Red Headphone. It come in a variety range of colors and traits with a collection size of 100."
+}
