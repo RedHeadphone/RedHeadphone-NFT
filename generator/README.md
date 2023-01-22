@@ -15,5 +15,6 @@ As of v2.0.0, nft-generator-py will use the argparse library in order to support
 
 ### Credits
 The NFT generator was created by [Jonathan Becker](https://jbecker.dev)
+
 Repo - [Jon-Becker/nft-generator-py](https://github.com/Jon-Becker/nft-generator-py)
 
