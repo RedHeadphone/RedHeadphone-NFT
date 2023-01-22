@@ -1,12 +1,12 @@
 // SPDX-License-Identifier: UnLicensed
 pragma solidity >=0.8.17;
 
-import "erc721a/contracts/ERC721A.sol";
+import "ERC721A/contracts/ERC721A.sol";
 
 contract RedHeadphoneNFT is ERC721A {
     uint maxSupply = 100;
 
-    constructor() ERC721A("Red Headphone NFT", "RedH") {
+    constructor() ERC721A("RedHeadphone NFT", "RedH") {
         _mint(msg.sender, maxSupply);
     }
 

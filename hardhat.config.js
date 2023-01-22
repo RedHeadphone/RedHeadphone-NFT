@@ -13,17 +13,23 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  */
 
 module.exports = {
-  solidity: "0.8.4",
+  solidity: "0.8.17",
   networks: {
-    mumbai_polygon: {
-      url: process.env.MUMBAI_URL || "",
+    polygon_mainnet: {
+      url: process.env.RPC_MAINNET || "",
+      accounts:
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    },
+    polygon_mumbai: {
+      url: process.env.RPC_MUMBAI || "",
       accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
   },
   etherscan: {
     apiKey: {
-      polygonMumbai: process.env.MUMBAI_POLYSCAN
+      polygonMumbai: process.env.POLYGONSCAN_API_KEY,
+      polygon: process.env.POLYGONSCAN_API_KEY,
     }
   }
 };
